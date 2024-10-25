@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(19, 21, 55, 1) 0%,
+    rgba(31, 55, 87, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+span {
+  box-sizing: border-box;
+  padding: 35px 49px 35px 49px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-family: Barlow Semi Condensed;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+  color: #565468;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 33px;
+  border: 3px solid #ffffff4a;
+  border-radius: 15px;
+  margin-top: 48px;
+  margin-bottom: 163.5px;
+  width: 700px;
+}
+
+.container-header {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 1;
+  margin-bottom: 48px;
+}
+
+.container-header {
+  position: relative;
+}
+
+.paper {
+  position: absolute;
+  top: -100px;
+  left: 100px;
+}
+
+.rock {
+  position: absolute;
+  top: -100px;
+  left: 400px;
+}
+
+.scissors {
+  position: absolute;
+  top: 120px;
+  left: 250px;
+}
+
+@media screen and (max-width: 375px) {
+  .box-header {
+    padding: 24px 23px;
+    margin-top: 32px;
+    width: 200px;
+    margin-bottom: 105px;
+  }
+
+  .container-header {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 32px;
+  }
+
+  .logo {
+    width: 83px;
+  }
+
+  span {
+    padding: 10px 10px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .back {
+    margin-bottom: 0px;
+    width: 166px;
+  }
+
+  .paper {
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    width: 80px;
+  }
+
+  .rock {
+    position: absolute;
+    top: -10px;
+    left: 175px;
+    width: 80px;
+  }
+
+  .scissors {
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    width: 80px;
+  }
+}
