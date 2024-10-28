@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 span {
@@ -45,7 +46,6 @@ span {
   justify-content: center;
   margin: 0 auto;
   z-index: 1;
-  margin-bottom: 250px;
 }
 
 .container-header {
@@ -97,7 +97,6 @@ span {
   .back {
     margin-bottom: 0px;
     width: 166px;
-    margin-bottom: 280px;
   }
 
   .paper {
