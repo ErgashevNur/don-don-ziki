@@ -106,7 +106,7 @@ button {
   border: none;
 }
 
-#rules {
+.rules-btn {
   position: relative;
   left: 990px;
   top: -50px;
@@ -114,11 +114,11 @@ button {
   cursor: pointer;
 }
 
-#rules:hover {
+.rules-btn:hover {
   transform: scale(1.15);
 }
 
-#rules:active {
+.rules-btn:active {
   transform: scale(1.5);
 }
 
@@ -138,8 +138,8 @@ main {
   top: -180px;
   left: 150px;
   z-index: 100;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   transition: 0.5s;
 }
 

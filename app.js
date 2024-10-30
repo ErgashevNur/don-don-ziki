@@ -1,3 +1,7 @@
+const rules = document.querySelector(".rules-btn");
+const hiddenNavEl = document.querySelector(".hidden-nav");
+const exitEl = document.getElementById("exit");
+
 import { paper, rock, scissors } from "./hands.js";
 
 const aiHands = () => {
@@ -8,7 +12,7 @@ const aiHands = () => {
 
 export default aiHands;
 
-img.src``;
+img.src`${aiHands()}.svg`;
 
 //
 
@@ -21,16 +25,21 @@ if (aiHands) {
 }
 
 //
-
-const rules = document.getElementById("rules");
-const hiddenNavEl = document.querySelector(".hidden-nav");
-const exitEl = document.getElementById("exit");
-
 rules.addEventListener("click", () => {
   hiddenNavEl.classList.toggle("show-nav");
   document.body.classList.toggle("overflow-toggle");
   if (document.body.classList.contains("overflow-toggle")) {
-    exitEl.src = "../img/x.svg";
+    exitEl.src = "./img/x.svg";
+  } else {
+    exitEl.src = "../img/evaluation.png";
+  }
+});
+
+exitEl.addEventListener("click", () => {
+  hiddenNavEl.classList.toggle("show-nav");
+  document.body.classList.toggle("overflow-toggle");
+  if (document.body.classList.contains("overflow-toggle")) {
+    exitEl.src = "./img/x.svg";
   } else {
     exitEl.src = "../img/evaluation.png";
   }
