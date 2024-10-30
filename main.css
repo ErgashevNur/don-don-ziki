@@ -256,15 +256,9 @@ main {
   .hidden-nav {
     width: 50vh;
     height: 750px;
-    background-color: #ffffff;
-    border-radius: 8px;
     position: absolute;
     top: -312px;
     left: -60px;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-    transition: 1s;
   }
 }
 
@@ -276,5 +270,23 @@ main {
     transition: background-color 0.3s ease, transform 0.9s ease;
     cursor: pointer;
     width: 50px;
+  }
+
+  .hidden-nav {
+    width: 50vh;
+    height: 730px;
+    position: absolute;
+    top: -312px;
+    left: -40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hidden-nav {
+    width: 50vh;
+    height: 600px;
+    position: absolute;
+    top: -312px;
+    left: -15px;
   }
 }
