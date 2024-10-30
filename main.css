@@ -254,11 +254,21 @@ main {
   }
 
   .hidden-nav {
-    width: 50vh;
-    height: 750px;
+    width: 45vh;
+    height: 915px;
     position: absolute;
     top: -312px;
-    left: -60px;
+    left: -55px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  hidden-nav {
+    width: 50vh;
+    height: 850px;
+    position: absolute;
+    top: -312px;
+    left: -85px;
   }
 }
 
@@ -274,19 +284,31 @@ main {
 
   .hidden-nav {
     width: 50vh;
-    height: 730px;
+    height: 740px;
     position: absolute;
     top: -312px;
-    left: -40px;
+    left: -30px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hidden-nav {
     width: 50vh;
-    height: 600px;
+    height: 658px;
     position: absolute;
     top: -312px;
     left: -15px;
+  }
+
+  .rules-btn {
+    position: relative;
+    left: 210px;
+    top: 55px;
+    transition: background-color 0.3s ease, transform 0.9s ease;
+    cursor: pointer;
+  }
+
+  .rules-menu {
+    width: 40px;
   }
 }
