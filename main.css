@@ -187,38 +187,11 @@ main {
   visibility: visible;
 }
 
-/*  */
-
-.beats-down {
-  position: absolute;
-  left: 100px;
-  top: 250px;
+.rules-basic-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.arrow-down {
-  position: absolute;
-  left: 135px;
-  top: 215px;
-}
-
-.arrow-up {
-  position: absolute;
-  left: 215px;
-  top: 215px;
-}
-
-.paperr {
-  position: absolute;
-  top: 270px;
-  left: 140px;
-}
-
-.beats-up {
-  position: absolute;
-  left: 250px;
-  top: 250px;
-}
-
 /*  */
 
 @media screen and (max-width: 412px) {
@@ -278,6 +251,20 @@ main {
     transition: background-color 0.3s ease, transform 0.9s ease;
     cursor: pointer;
     width: 50px;
+  }
+
+  .hidden-nav {
+    width: 65vh;
+    height: 750px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: -312px;
+    left: -60px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
   }
 }
 
