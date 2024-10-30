@@ -274,7 +274,18 @@ main {
   .rules-btn {
     position: relative;
     left: 250px;
-    top: 230px;
+    top: 200px;
+    transition: background-color 0.3s ease, transform 0.9s ease;
+    cursor: pointer;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .rules-btn {
+    position: relative;
+    left: 200px;
+    top: 100px;
     transition: background-color 0.3s ease, transform 0.9s ease;
     cursor: pointer;
     width: 50px;
