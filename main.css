@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  height: 100vh;
+  height: 673px;
 }
 
 span {
@@ -36,7 +36,8 @@ span {
 }
 
 .container-header {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -84,6 +85,7 @@ span {
   transform: scale(1.5);
 }
 /* ? */
+
 .scissors {
   position: absolute;
   top: 120px;
@@ -101,15 +103,16 @@ span {
 }
 
 /*  */
+
 button {
   background-color: transparent;
   border: none;
 }
 
 .rules-btn {
-  position: relative;
-  left: 990px;
-  top: -50px;
+  position: absolute;
+  left: 940px;
+  top: 270px;
   transition: background-color 0.3s ease, transform 0.9s ease;
   cursor: pointer;
 }
@@ -129,7 +132,8 @@ main {
 /*! rules button */
 
 .hidden-nav {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 415px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -192,7 +196,175 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 /*  */
+
+.img-box.nan-box {
+  display: none;
+}
+
+/*  */
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comparitionss {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comparitionss.blok {
+  display: flex;
+}
+
+/* ? */
+
+@media screen and (max-width: 1390px) {
+  .rules-btn {
+    left: 870px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .rules-btn {
+    left: 800px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .rules-btn {
+    left: 740px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rules-btn {
+    left: 700px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .rules-btn {
+    left: 650px;
+  }
+
+  .box-header {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-header {
+    padding: 24px 23px;
+    margin-top: 32px;
+    width: 600px;
+    margin-bottom: 180px;
+  }
+
+  .rules-btn {
+    position: absolute;
+    left: 600px;
+    top: 250px;
+    transition: background-color 0.3s ease, transform 0.9s ease;
+    cursor: pointer;
+    width: 50px;
+  }
+
+  .hidden-nav {
+    top: -160px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .rules-btn {
+    left: 560px;
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .rules-btn {
+    left: 500px;
+  }
+
+  .box-header {
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .back {
+    margin-bottom: 0px;
+    width: 250px;
+  }
+
+  .paper {
+    position: absolute;
+    top: -50px;
+    left: 120px;
+    width: 130px;
+  }
+
+  .rock {
+    position: absolute;
+    top: -50px;
+    left: 310px;
+    width: 130px;
+  }
+
+  .scissors {
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    width: 130px;
+  }
+
+  .rules-btn {
+    position: absolute;
+    left: 470px;
+    top: 290px;
+    transition: background-color 0.3s ease, transform 0.9s ease;
+    cursor: pointer;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hidden-nav {
+    left: 50px;
+  }
+
+  .rules-btn {
+    left: 400px;
+  }
+
+  .box-header {
+    width: 400px;
+  }
+
+  .container-header {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .rules-btn {
+    left: 370px;
+  }
+
+  .box-header {
+    width: 370px;
+  }
+
+  .hidden-nav {
+    left: 20px;
+  }
+}
 
 @media screen and (max-width: 412px) {
   .box-header {
@@ -244,31 +416,43 @@ main {
     width: 80px;
   }
 
+  .rules-menu {
+    width: 40px;
+  }
+
   .rules-btn {
     position: relative;
     left: 250px;
-    top: 200px;
+    top: 80px;
     transition: background-color 0.3s ease, transform 0.9s ease;
     cursor: pointer;
     width: 50px;
   }
 
   .hidden-nav {
-    width: 45vh;
-    height: 915px;
+    width: 465px;
+    height: 780px;
     position: absolute;
     top: -312px;
     left: -55px;
   }
 }
 
-@media screen and (max-width: 394px) {
-  hidden-nav {
-    width: 50vh;
-    height: 850px;
+@media screen and (max-width: 400px) {
+  .hidden-nav {
+    width: 48vh;
+    height: 852px;
     position: absolute;
     top: -312px;
-    left: -85px;
+    left: -45px;
+  }
+
+  .hidden-nav {
+    width: 485px;
+    height: 780px;
+    position: absolute;
+    top: -312px;
+    left: -55px;
   }
 }
 
@@ -283,7 +467,7 @@ main {
   }
 
   .hidden-nav {
-    width: 50vh;
+    width: 350px;
     height: 740px;
     position: absolute;
     top: -312px;
@@ -293,7 +477,7 @@ main {
 
 @media screen and (max-width: 320px) {
   .hidden-nav {
-    width: 50vh;
+    width: 330px;
     height: 658px;
     position: absolute;
     top: -312px;

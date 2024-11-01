@@ -19,16 +19,18 @@
     <main>
       <div class="container-header">
         <div class="img-box">
-          <img id="paper" class="paper" src="./img/paper.svg" alt="paper" />
-          <img id="rock" class="rock" src="./img/rock.svg" alt="rock" />
+          <img id="paper" class="nanBox paper" src="./img/paper.svg" />
+          <img class="NanBox rock" src="./img/rock.svg" alt="rock" />
           <img class="back" src="./img/triangle.svg" alt="" />
-          <img
-            id="scissors"
-            class="scissors"
-            src="./img/scissors.svg"
-            alt="scissors"
-          />
+          <img id="scissor" class="NaNBox scissors" src="./img/scissors.svg" />
         </div>
+        <section class="block-box">
+          <div class="comparitionss">
+            <img class="human" src="" />
+            <img class="ai" src="" />
+          </div>
+        </section>
+
         <button class="rules-btn" id="rules">
           <img class="rules-menu" src="./img/evaluation.png" width="50px" />
         </button>
@@ -51,6 +53,6 @@
         </section>
       </div>
     </main>
-    <script typeof="module" src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
