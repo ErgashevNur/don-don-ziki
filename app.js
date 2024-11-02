@@ -6,8 +6,10 @@ const nanBox = document.querySelector(".nanBox");
 const hidden = document.querySelector(".NanBox");
 const hiddenBox = document.querySelector(".NaNBox");
 const human = document.querySelector(".human");
-const img = document.querySelector(".ai");
+const ai = document.querySelector(".ai");
 const comparitionss = document.querySelector(".comparitionss");
+const text = document.querySelector(".result");
+const schot = document.querySelector(".schot");
 
 rules.addEventListener("click", () => {
   hiddenNavEl.classList.toggle("show-nav");
@@ -35,24 +37,25 @@ nanBox.addEventListener("click", (event) => {
   boxNan.classList.toggle("nan-box"), comparitionss.classList.toggle("blok");
   document.body.classList.toggle("overflow-toggle");
   let rasmSrc = event.target.src;
-  document.querySelector(".human").src = rasmSrc;
+  human.src = `${rasmSrc}`;
 });
 
 hidden.addEventListener("click", (event) => {
   boxNan.classList.toggle("nan-box"), comparitionss.classList.toggle("blok");
   document.body.classList.toggle("overflow-toggle");
   let rasmSrc = event.target.src;
-  document.querySelector(".human").src = rasmSrc;
+  human.src = `${rasmSrc}`;
 });
 
 hiddenBox.addEventListener("click", (event) => {
   boxNan.classList.toggle("nan-box"), comparitionss.classList.toggle("blok");
   document.body.classList.toggle("overflow-toggle");
   let rasmSrc = event.target.src;
-  document.querySelector(".human").src = rasmSrc;
+  human.src = `${rasmSrc}`;
 });
 
 //
+
 import { paper, rock, scissors } from "./hands.js";
 const aiHands = () => {
   const hands = [scissors, rock, paper];
@@ -61,15 +64,38 @@ const aiHands = () => {
 };
 
 export default aiHands;
+const aiChoice = aiHands();
 
-img.src = `${aiHands()}.svg`;
+ai.src = `${aiChoice}`;
 
 //
 
-const schot = document.querySelector("span");
+let schott = 0;
+let winner = "";
 
-if (aiHands) {
-  schot += 1;
-} else {
-  schot -= 1;
+if (human == aiChoice) {
+  winner = "Durrang!";
+} else if (human == "./img/scissors.svg" && aiChoice == "./img/paper.svg") {
+  winner = "Siz yutdingiz!";
+  schott++;
+} else if (human == "./img/rock.svg" && aiChoice == "./img/scissors.svg") {
+  winner = "Siz yutdingiz!";
+  schott++;
+} else if (human == "./img/paper.svg" && aiChoice == "./img/rock.svg") {
+  winner = "Siz yutdingiz!";
+  schott++;
+} else if (aiChoice == "./img/scissors.svg" && human == "./img/paper.svg") {
+  winner = "Robot yutdi!";
+  schott++;
+} else if (aiChoice == "./img/rock.svg" && human == "./img/scissors.svg") {
+  winner = "Robot yutdi!";
+  schott++;
+} else if (aiChoice == "./img/paper.svg" && human == "./img/rock.svg") {
+  winner = "Robot yutdi!";
+  schott++;
 }
+
+console.log(human);
+console.log(aiChoice);
+text.innerHTML = `${winner}`;
+schot.innerHTML = `${schott}`;
