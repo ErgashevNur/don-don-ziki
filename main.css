@@ -227,6 +227,37 @@ main {
   display: flex;
 }
 
+.result {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 5px 25px 5px;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.refresh {
+  --tw-text-opacity: 1;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 10px 0 10px;
+  padding-top: 10px;
+}
+
 /* ? */
 
 @media screen and (max-width: 1390px) {
