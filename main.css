@@ -8,7 +8,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 715px;
+  height: 100vh;
 }
 
 span {
@@ -211,16 +211,14 @@ main {
 
 /*  */
 
-main {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .comparitionss {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 150px;
+  margin: 150px 15px 15px 15px;
   display: none;
   align-items: center;
   justify-content: space-between;
-  margin-top: 150px;
 }
 
 .comparitionss.blok {
@@ -255,7 +253,8 @@ main {
   font-size: 26px;
   font-family: "Roboto", sans-serif;
   margin: 0 10px 0 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+  text-align: center;
 }
 
 /* ? */
@@ -382,6 +381,18 @@ main {
   .box-header {
     width: 490px;
   }
+
+  .human {
+    width: 130px;
+  }
+
+  .ai {
+    width: 130px;
+  }
+
+  .result {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -411,6 +422,16 @@ main {
     width: 130px;
   }
 
+  .btn-box {
+    position: absolute;
+    top: 150px;
+    left: 130px;
+  }
+
+  .comparitionss {
+    position: relative;
+  }
+
   .rules-btn {
     position: absolute;
     left: 420px;
@@ -423,8 +444,9 @@ main {
 
 @media screen and (max-width: 570px) {
   body {
-    height: 605px;
+    height: 95vh;
   }
+
   .ai {
     width: 100px;
   }
@@ -438,7 +460,7 @@ main {
   }
 
   .rules-btn {
-    top: 210px;
+    top: 190px;
   }
 
   .rules-menu {
@@ -446,20 +468,48 @@ main {
   }
 
   .hidden-nav {
-    max-width: 580px;
+    max-width: 500px;
     height: 740px;
     position: absolute;
     top: -360px;
     left: -5px;
   }
+
+  .refresh {
+    font-size: 18px;
+    padding: 9px;
+  }
+
+  .result {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 530px) {
+  .rock {
+    position: absolute;
+    top: -50px;
+    left: 280px;
+  }
+
+  .paper {
+    position: absolute;
+    top: -50px;
+    left: 90px;
+  }
+
+  .scissors {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .hidden-nav {
-    left: 50px;
+    top: -400px;
+    left: -7px;
+    height: 100vh;
   }
 
   .rules-btn {
@@ -473,6 +523,23 @@ main {
   .container-header {
     max-width: 500px;
   }
+
+  #refresh {
+    font-size: 16px;
+    padding: 9px;
+  }
+
+  .qoida-img {
+    margin-top: 130px;
+  }
+
+  .comparitionss {
+    max-width: 500px;
+  }
+
+  .rules-box {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -485,11 +552,45 @@ main {
   }
 
   .hidden-nav {
-    left: 20px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .paper {
+    left: 50px;
+  }
+
+  .rock {
+    left: 240px;
+  }
+
+  .scissors {
+    top: 120px;
+    left: 140px;
+  }
+
+  .rules-btn {
+    left: 340px;
+  }
+
+  .rules-menu {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .box-header {
+    width: 320px;
   }
 }
 
 @media screen and (max-width: 412px) {
+  body {
+    height: 98vh;
+  }
+
   .box-header {
     padding: 24px 23px;
     margin-top: 32px;
@@ -516,6 +617,10 @@ main {
   .back {
     margin-bottom: 0px;
     width: 166px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: 0;
   }
 
   .paper {
@@ -523,6 +628,7 @@ main {
     top: -10px;
     left: 35px;
     width: 80px;
+    z-index: 1;
   }
 
   .rock {
@@ -530,6 +636,7 @@ main {
     top: -10px;
     left: 175px;
     width: 80px;
+    z-index: 1;
   }
 
   .scissors {
@@ -537,13 +644,11 @@ main {
     top: 110px;
     left: 110px;
     width: 80px;
+    z-index: 1;
   }
 
   .rules-menu {
     width: 40px;
-    position: relative;
-    top: 47px;
-    left: 20px;
   }
 
   .relus-icon {
@@ -553,8 +658,8 @@ main {
 
   .rules-btn {
     position: relative;
-    left: 250px;
-    top: 80px;
+    left: 245px;
+    top: 25px;
     transition: background-color 0.3s ease, transform 0.9s ease;
     cursor: pointer;
     width: 50px;
@@ -570,36 +675,28 @@ main {
     height: 780px;
     position: absolute;
     top: -312px;
-    left: -55px;
+    left: -50px;
   }
 
   .qoida-img {
     width: 280px;
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   .exit-img {
     position: absolute;
-    top: 640px;
-    left: 300px;
+    top: 560px;
+    left: 350px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .hidden-nav {
-    width: 48vh;
-    height: 852px;
+    width: 390px;
+    height: 638px;
     position: absolute;
     top: -312px;
-    left: -45px;
-  }
-
-  .hidden-nav {
-    width: 485px;
-    height: 780px;
-    position: absolute;
-    top: -312px;
-    left: -55px;
+    left: -50px;
   }
 
   .rules-btn {
@@ -607,28 +704,31 @@ main {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .rules-btn {
-    position: relative;
-    left: 200px;
-    top: 100px;
-    transition: background-color 0.3s ease, transform 0.9s ease;
-    cursor: pointer;
-    width: 50px;
-  }
-
+@media screen and (max-width: 370px) {
   .hidden-nav {
-    width: 350px;
-    height: 740px;
+    width: 365px;
+    height: 640px;
     position: absolute;
     top: -312px;
-    left: -30px;
+    left: -33px;
   }
 
   .exit-img {
+    position: absolute;
+    top: 560px;
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hidden-nav {
+    width: 350px;
+  }
+
+  /* .exit-img {
     top: 570px;
     left: 270px;
-  }
+  } */
 }
 
 @media screen and (max-width: 330px) {
@@ -660,5 +760,21 @@ main {
 
   .rules-menu {
     width: 40px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .hidden-nav {
+    width: 300px;
+    height: 635px;
+    position: absolute;
+    top: -312px;
+    left: -7px;
+  }
+
+  .exit-img {
+    position: absolute;
+    top: 560px;
+    left: 280px;
   }
 }
