@@ -200,7 +200,7 @@ main {
 }
 
 .img-box {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 /*  */
@@ -561,6 +561,7 @@ main {
 
   .box-header {
     width: 370px;
+    margin-bottom: 100px;
   }
 
   .hidden-nav {
