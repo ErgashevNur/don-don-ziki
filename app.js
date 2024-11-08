@@ -78,19 +78,23 @@ box.forEach((box) => {
       `${dataInfo}` == `img/scissors.svg` &&
       aiChoice == "img/paper.svg"
     ) {
+      human.style.boxShadow = "1px 3px 0px 19px rgba(254,246,246,0.2)";
       winner = "Siz G`olib";
       schot++;
     } else if (
       `${dataInfo}` == `img/rock.svg` &&
       aiChoice == "img/scissors.svg"
     ) {
+      human.style.boxShadow = "1px 3px 0px 19px rgba(254,246,246,0.2)";
       winner = "Siz G`olib";
       schot++;
     } else if (`${dataInfo}` == `img/paper.svg` && aiChoice == "img/rock.svg") {
+      human.style.boxShadow = "1px 3px 0px 19px rgba(254,246,246,0.2)";
       winner = "Siz G`olibsiz";
       schot++;
     } else {
       winner = "Robot G'olib";
+      ai.style.boxShadow = "1px 3px 0px 19px rgba(254,246,246,0.2)";
       schot--;
     }
     localStorage.setItem("schot", schot);

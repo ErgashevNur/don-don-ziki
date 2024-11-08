@@ -61,10 +61,16 @@ span {
   left: 100px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.7s ease;
+
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
 }
 
 .paper:hover {
   transform: scale(1.05);
+  /* background-color: #fff; */
+  box-shadow: 1px 3px 0px 19px rgba(254, 246, 246, 0.3);
 }
 
 .paper:active {
@@ -77,10 +83,16 @@ span {
   left: 400px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.7s ease;
+
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
 }
 
 .rock:hover {
   transform: scale(1.05);
+  /* background-color: #fff; */
+  box-shadow: 1px 3px 0px 19px rgba(254, 246, 246, 0.3);
 }
 
 .rock:active {
@@ -94,10 +106,16 @@ span {
   left: 250px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.7s ease;
+
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
 }
 
 .scissors:hover {
   transform: scale(1.05);
+  /* background-color: #fff; */
+  box-shadow: 1px 3px 0px 19px rgba(254, 246, 246, 0.3);
 }
 
 .scissors:active {
@@ -260,6 +278,18 @@ main {
   text-align: center;
 }
 
+.human {
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+}
+
+.ai {
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+}
+
 /* ? */
 
 @media screen and (max-width: 1390px) {
@@ -387,10 +417,14 @@ main {
 
   .human {
     width: 130px;
+    height: 130px;
+    border-radius: 50%;
   }
 
   .ai {
     width: 130px;
+    height: 130px;
+    border-radius: 50%;
   }
 
   .result {
