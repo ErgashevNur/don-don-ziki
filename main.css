@@ -486,10 +486,14 @@ main {
 
   .ai {
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
   }
 
   .human {
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
   }
 
   .box-header {
