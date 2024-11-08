@@ -33,17 +33,20 @@ exitEl.addEventListener("click", () => {
 
 // Paper,Rock,Scissors lar click bosa img-box display-none bo'ladi.
 nanBox.addEventListener("click", () => {
-  boxNan.classList.toggle("nan-box") && comparitionss.classList.toggle("blok");
+  boxNan.classList.toggle("nan-box");
+  comparitionss.classList.toggle("blok");
   human.src = nanBox.src;
 });
 
 Nanbox.addEventListener("click", () => {
-  boxNan.classList.toggle("nan-box") && comparitionss.classList.toggle("blok");
+  boxNan.classList.toggle("nan-box");
+  comparitionss.classList.toggle("blok");
   human.src = Nanbox.src;
 });
 
 naNbox.addEventListener("click", () => {
-  boxNan.classList.toggle("nan-box") && comparitionss.classList.toggle("blok");
+  boxNan.classList.toggle("nan-box");
+  comparitionss.classList.toggle("blok");
   human.src = naNbox.src;
 });
 
@@ -56,8 +59,6 @@ const aiHands = () => {
   return hands[randomIndex];
 };
 
-export default aiHands;
-
 // ai imgning src Robotim tanlab beryabti
 let aiChoice = aiHands();
 ai.src = aiChoice;
@@ -67,21 +68,6 @@ let box = [nanBox, Nanbox, naNbox];
 box.forEach((box) => {
   box.addEventListener("click", function () {
     const dataInfo = this.getAttribute("data-info");
-    console.log(`${dataInfo}`);
-
-    window.onload = function () {
-      let schot = localStorage.getItem("schot");
-      if (schot === null) {
-        schot = 0;
-      } else {
-        schot = parseInt(schot);
-      }
-
-      shot.innerHTML = `${schot}`;
-    };
-
-    let winner = "";
-    let schot = parseInt(localStorage.getItem("schot")) || 0;
 
     if (`${dataInfo}` == aiChoice) {
       winner = "Durrang!";
