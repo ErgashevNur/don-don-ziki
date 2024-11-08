@@ -69,6 +69,9 @@ box.forEach((box) => {
   box.addEventListener("click", function () {
     const dataInfo = this.getAttribute("data-info");
 
+    let winner = "";
+    let schot = 0;
+
     if (`${dataInfo}` == aiChoice) {
       winner = "Durrang!";
     } else if (
