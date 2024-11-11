@@ -695,23 +695,23 @@ main {
 
   .paper {
     position: absolute;
-    top: -10px;
-    left: 35px;
+    top: -60px;
+    left: 50px;
     width: 80px;
     z-index: 1;
   }
 
   .rock {
     position: absolute;
-    top: -10px;
-    left: 175px;
+    top: -60px;
+    left: 170px;
     width: 80px;
     z-index: 1;
   }
 
   .scissors {
     position: absolute;
-    top: 110px;
+    top: 50px;
     left: 110px;
     width: 80px;
     z-index: 1;
